@@ -1,0 +1,13 @@
+.whatsapp-icon {  
+  background-image: url("../Img/Foto.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  bottom: 10px; /* Ajusta la posición vertical */
+  right: 10px; /* Ajusta la posición horizontal */
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 60px; /* Centra el texto verticalmente */
+  cursor: pointer;
+}
