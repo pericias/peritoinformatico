@@ -456,10 +456,10 @@ button:hover:before,button:hover:after{
       background: black;         
 }
 
-@media (max-widht: 952px) {
+@media (max-width: 952px) {
     html, body {height: 40%}
 }
 
-@media (max-widht: 858px) {
+@media (max-width: 858px) {
     html, body {height: 15%}
 }
