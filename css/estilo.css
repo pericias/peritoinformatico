@@ -1,0 +1,478 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif, "Anta-Regular.ttf"; */
+    font-family: Verdana,"Oswald Medium", "Oswald", "Anta";
+}
+
+/* FUENTES */
+@font-face {
+    font-family: "Trickster";
+    src:
+    url("../font/Anta-Regular.ttf"), url("../font/Oswald-VariableFont_wght.ttf"),
+    url("../font/static/Oswald-Medium.ttf");
+  }
+
+/* HEADER */
+
+header{
+    height: 80px;
+    background: #4d4d5c;
+    padding: 0 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);/* #6cc001; */
+    font-weight: 200;
+    font-family: "Trickster", "Anta";
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 30px;
+    transition: 0.4s;
+    font-family: "Trickster", "Anta";
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    background: rgba(238, 68, 65, 0.747);/* #6cc001;*/
+}
+
+#check{
+    display: none;
+}
+/* BANNER */
+#banner{
+    padding: 0 20px;
+    background-image: url(../img/Fondo1.png);
+    height: 53vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{
+    content: '';
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 53vh;
+    left: 0;
+}
+
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 10px 0px;
+    font-family: sans-serif;
+}
+
+.contenido-banner h3 span{ /*PERITO INFORMATICO*/
+    font-weight: 600;
+    font-size: 38px;
+    font-family: "Trickster", "Anta";
+
+    /* font-family: "Oswald", sans-serif; */
+}
+
+.contenido-banner h3 .span2{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.boton-empezar{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid  rgba(235, 61, 58, 0.747); /* #6cc001;*/
+    padding: 14px 35px;
+    align-self: baseline;
+    transition: all 0.4s;
+    font-family: sans-serif;
+}
+
+.boton-empezar:hover{
+    background:  rgba(238, 68, 65, 0.747); /* rgba(245, 74, 74, 0.842); /* #6cc09070;*/
+}
+
+/* PERSONAS */
+
+#personas{
+    padding: 15px 20px;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5em;    
+}
+
+#personas h1{
+    font-family: "Trickster", "Anta";
+    /* padding: 0px 10px;   
+    text-align: left;
+    font-size: 4em; */
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+    margin: 3%;
+}
+
+#personas img{
+    border-radius: 10%;
+    margin: 1% 1% 2% 1%;
+}
+
+#personas div{
+    padding: 20px 20px;
+    /* border: 1px solid blue; */
+}
+
+#personas div h4{
+    color: #40405C;
+    font-size: 20px;
+    margin: 0px 0px;
+    
+}
+
+#personas div p{
+    color: #4d4d5c87;
+    font-size: 15px;
+    
+}
+
+.boton-saber-mas {
+    display: inline-block;    
+    text-decoration: none;
+    color: rgba(235, 61, 58, 0.747); /* #6cc091;*/
+    padding: 10px 30px;
+    border: 1px solid rgba(254, 44, 42, 0.842);/*#6cc091;*/
+    border-radius: 15px;
+    margin-top: 40px;
+    transition: all 0.4s;
+    
+}
+
+.boton-saber-mas:hover{
+    background: rgba(235, 61, 58, 0.747);/*#6cc091;*/
+    color: #fff;
+    cursor: pointer; /*BOTONES*/
+}
+
+#iconos{
+    padding: 40px 0px;
+    background:  #4d4d5c; /* rgba(77, 77,92, 0.6);*/
+}
+
+#iconos h1{
+    /* font-family: "oswald", sans-serif;  */
+    /* font-family: "anta"; */
+    font-family: "Trickster";
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  */
+
+    font-weight: 500;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.contenido-iconos{
+    padding: 20px 20px 0px 20px; /*50px 20px 50px 20px; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+
+.contenido-iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255,255,255,0.2);
+}
+#icono-email{
+    border: none;
+}
+
+.contenido-iconos div i{
+    color:   rgba(235, 61, 58, 0.747); /*#6cc091;*/
+}
+
+.contenido-iconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.contenido-iconos div p{
+    color: rgba(255, 255, 255, 0.801); /*rgba(255,255,255,0.55);*/
+    font-size: 15px;
+}
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* FORMULARIO */
+#contacto{
+    background: rgba(238, 32, 28, 0.747);/* #6cc091;*/
+    padding: 10px 0px;
+    color: #fff;
+}
+
+.contenido-contacto{
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#contacto .cajaizquierda{
+    /*background:  rgba(235, 61, 58, 0.747);*/
+    /* border: 1px solid blue; */
+    padding: 10px 10px;
+    flex: 1;
+    margin: 0px 0px;
+    line-height: 1.5em;
+    border-right: 2px solid rgba(255,255,255,0.2);
+    /* background-image: url('../img/Qr.png'); */
+    background-repeat: no-repeat;
+    /* background-position: center top 300px; */
+
+}
+
+
+#contacto .cajaizquierda h1{
+    /* 
+    font-size: 35px;
+     */
+    line-height: 1.1em;
+    text-align: center;
+    font-family: "Trickster", "Anta";
+    /* font-weight: 600; */
+
+    font-weight: 500;
+    font-size: 2.5em;
+
+    text-align: center;
+}
+
+#contacto .cajaderecha{
+      /* border: 1px solid blue;  */
+    flex: 1;
+    padding: 10px 10px;
+    margin: 30px 0px;
+}
+
+#contacto h4{
+
+    line-height: 1.1em;
+    text-align: center;
+    font-family: "Trickster", "Anta";
+    font-weight: 500;
+    font-size: 2.5em;
+    
+}
+input.boton-saber-mas {
+    font-size: 15px; /* Ajusta el tamaño según lo necesites */
+}
+
+#contacto form{
+    max-width: 100%; /*Tamaño del Form*/
+    margin: 0 auto;
+}
+.datos-form{
+   display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea{
+    /* background: #6cc091; */
+    border-radius: 10px;
+    border: 2px solid rgba(238, 32, 28, 0.747);/* #8dcca9; */
+    padding: 10px 5px;
+    outline: 0;
+    color: black;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: rgba(238, 68, 65, 0.747);  /*#4bae77;*/
+    /*box-shadow: 0 0 0 1px rgba(238, 68, 65, 0.747); /*#4bae77 ;*/
+    color: black;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: rgb(78, 78, 78);
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton-formulario .boton-saber-mas{
+    background: white;
+    display: block;
+    border: 1px solid #fff;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    transition: 0.4s;
+}
+.boton-formulario .boton-saber-mas:hover{
+    background: rgba(238, 68, 65, 0.747); /* #4fa776ad ;*/
+    color: #fff;
+}
+/* FOOTER */
+footer{
+    background:  #4d4d5c; /* rgba(77, 77,92, 0.6); /* #4d4d5c;*/
+    color: rgba(255, 255, 255, 0.801); /* #cccccc4a;*/
+    text-align: center;
+    padding: 7px 0px;
+    font-size: 0.8em;
+}
+
+.bonus{        
+        width: 20px;
+        height: 20px;
+        /* background-position: center top -20px;*/
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px 10px 0px;
+        z-index: 100;
+
+        transition: 0.8s;
+        background-image: url("../img/Logo.png");
+        background-repeat: no-repeat;
+        background-position: center;                
+    }
+    .menu::after {
+
+        content: "Que la sabiduría,\a no sea humillación para tu prójimo.";
+        white-space: pre; /* Esto asegura que el salto de línea (\a) sea reconocido */
+        line-height: 2.5;    
+        /* content: "Que la sabiduría, no sea humillación para tu prójimo."; */
+        display: block;
+        margin-top: 135px; /* Ajusta según sea necesario */
+        font-size: 0.9em;
+        color: white; /* Color del texto */
+        font-family: monospace;
+      }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    #personas{
+        flex-direction: column;
+    }
+
+    #personas img{
+        border-radius: 10%;
+        margin: 8% 1% 1% 1%;
+    }   
+
+    #personas h1{
+        font-size: 1.9em;
+        font-weight: 500;
+    }
+    
+    /* ICONOS */
+    .contenido-iconos{
+        flex-direction: column;
+    }
+    .contenido-iconos div{
+        border: none;
+    }
+    #iconos h1{
+        font-size: 1.9em;
+    }
+
+    /* FORMULARIO */
+    .datos-form{
+        flex-direction: column;
+    }
+
+    .contenido-contacto{
+        flex-direction: column;
+    }
+    #contacto .cajaizquierda{
+        border-right: none;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+    
+    #contacto .cajaizquierda h1, 
+    #contacto h4{
+        font-size: 1.9em;
+    }
+    
+}
+
