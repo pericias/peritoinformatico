@@ -408,7 +408,7 @@ footer{
     }
     .menu::after {
 
-        content: "Que la sabiduría,\a no sea humillación para tu prójimo.";
+        content: "Que la sabiduría,\a no sea humillación para tu prójimo. \a Omar Khayyam.";
         white-space: pre; /* Esto asegura que el salto de línea (\a) sea reconocido */
         line-height: 2.5;    
         /* content: "Que la sabiduría, no sea humillación para tu prójimo.--"; */
